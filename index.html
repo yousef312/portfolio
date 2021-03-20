@@ -48,24 +48,12 @@
         </p>
         <h3>I dance, sing and play piano a bit...</h3>
         <p>
-            Yeah for real... <br>
-            Well I am not the best for sure but kind have this wide experience for all of the three things,
-            so on with beatboxing and actually I was a good one(not trying to show off)!
-        </p>
-
-        <h3>Yeah And...?</h3>
-        <p>
-            This is a scene, that contain my own trace.. Yet the goal from visiting my little website is to look for
-            the environment that makes me what I am. <br>
-            And here is the simple answer for your simple question! <br>
-            What makes me successfull is that I think my self successfull, you need to have this self-belief to bring your self
-            or to force it inside this community. To share your ideas your thoughts opinions... <br>
-            You need to learn, then try then mistake and so on you can build something 
-            beautifull out of nothing, but experience!
+            Yeah and I do this couples of stuffs! <br>
+            also beatboxing!!
         </p>
 
         <h1>Things I've Made</h1>
-        <a href="http:\\www.github.com/yousef312/quiway">
+        <a href="https://github.com/yousef312/QuiwayJs">
             <img src="assets/quiwayOfficialLOGO.png" class="quiwaylib- icon unselect" title="Explore Quiway.js">
         </a>
         <h3>Quiway.js</h3>
@@ -88,7 +76,22 @@
             </span> <br>
             ...
         </p>   
-        <a href="http:\\www.github.com/yousef312/playfull">
+        <a href="https://github.com/yousef312/SubtityJs">
+            <img src="assets/subtity-.png" class="subtitylib- icon unselect" title="Explore Subtity.js">
+        </a>
+        <h3>Subtity.js</h3>
+        <p>
+            A JavaScript library to parse and render a couple of subtitle files. <br>
+            <span class="funcs-">Support : able to parse <span class="word">'srt'</span>,
+                <span class="word">'ssa'</span>,
+                <span class="word">'sbv'</span>,
+                <span class="word">'webvtt'</span>,
+                <span class="word">'itt'</span> file formats</span>
+
+            <span class="funcs-">Render or display : you can either render the subtitle into a rendering context 2D or directly display it into the DOM</span>
+            <span class="funcs-">Controllable : you can activate or disactivate, switch or add or remove subtitles from the subtitles list</span>
+        </p>
+        <a href="http://www.github.com/yousef312/playfull">
             <img src="assets/app-logo.png" class="playfullapp- icon unselect" title="Explore PlayFull App">
         </a> 
 
@@ -119,21 +122,28 @@
         </p>
 
         <h1>Contact</h1>
-        <a href="http:\\www.github.com/yousef312">
+        <a href="http://www.github.com/yousef312">
             <img class="contact-icon unselect" src="assets/octocat.png" title="Go to git hub">
         </a>
         <p>
             Git Hub
         </p>
 
-        <p>
-            My humble email: <br>
-            ynajy2200@gmail.com
-        </p>
+        <h3>Email me!</h3>
+        <form action="javascript:sendMail();" method="GET" name="f">
+            <textarea name="mail" id="mail" cols="30" rows="10"></textarea> <br>
+            <button class="button">send</button>
+        </form>
     </div>
 
     <script>
-        
+        function sendMail(){
+            subject = document.querySelector('#mail').value;
+            if(subject !== '')
+            {
+                window.open('mailto:ynaj2200@gmail.com?subject='+encodeURIComponent(subject))
+            }
+        }
     </script>
 </body>
 </html>
