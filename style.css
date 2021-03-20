@@ -76,6 +76,7 @@ h3{
 textarea{
     resize: none;
     height: fit-content;
+    min-height : 150px;
     padding: 4px;
     font-size: 11px;
     color: rgb(34, 34, 34);
