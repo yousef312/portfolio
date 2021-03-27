@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="spoto unselect">0</div>
+
 
     <div class="pre-intro">
         <h1>Yousef Neji</h1>
@@ -48,8 +51,7 @@
         </p>
         <h3>I dance, sing and play piano a bit...</h3>
         <p>
-            Yeah and I do this couples of stuffs! <br>
-            also beatboxing!!
+            Kind of stupid to talk about this stuffs but yeah what ever this is my little protfolio and I am free to write what ever I like!
         </p>
 
         <h1>Things I've Made</h1>
@@ -76,6 +78,7 @@
             </span> <br>
             ...
         </p>   
+
         <a href="https://github.com/yousef312/SubtityJs">
             <img src="assets/subtity-.png" class="subtitylib- icon unselect" title="Explore Subtity.js">
         </a>
@@ -86,15 +89,27 @@
                 <span class="word">'ssa'</span>,
                 <span class="word">'sbv'</span>,
                 <span class="word">'webvtt'</span>,
+                <span class="word">'usf'</span>,
                 <span class="word">'itt'</span> file formats</span>
-
-            <span class="funcs-">Render or display : you can either render the subtitle into a rendering context 2D or directly display it into the DOM</span>
+            <br>
+            <span class="funcs-">Render or display : you can either render the subtitle into a rendering context 2D or directly display it into the DOM</span> <br>
             <span class="funcs-">Controllable : you can activate or disactivate, switch or add or remove subtitles from the subtitles list</span>
         </p>
+
+        <a href="https://github.com/yousef312/StackMeJs">
+            <img src="assets/stackme-.png" class="stackmelib- icon unselect" title="Explore StackMe.js">
+        </a>
+        <h3>StackMe.js</h3>
+        <p>
+            It's a library that does a simple stack management for major uses! offers those funtionalities like
+            redo and undo and even switch to specific stack! <br>
+            It start while I am developing the game engine, then I wanted it to be a seperated library that every body
+            can use its advantages!
+        </p>
+
         <a href="http://www.github.com/yousef312/playfull">
             <img src="assets/app-logo.png" class="playfullapp- icon unselect" title="Explore PlayFull App">
-        </a> 
-
+        </a>
         <h3>PlayFull Media player</h3>
         <p>
             A media player for every movies lover, and as I like to say it :<br>
@@ -130,20 +145,10 @@
         </p>
 
         <h3>Email me!</h3>
-        <form action="javascript:sendMail();" method="GET" name="f">
-            <textarea name="mail" id="mail" cols="30" rows="10"></textarea> <br>
-            <button class="button">send</button>
-        </form>
+        <textarea name="mail" id="mail" cols="30" rows="10"></textarea> <br>
+        <button class="button">send</button>
     </div>
 
-    <script>
-        function sendMail(){
-            subject = document.querySelector('#mail').value;
-            if(subject !== '')
-            {
-                window.open('mailto:ynaj2200@gmail.com?subject='+encodeURIComponent(subject))
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
