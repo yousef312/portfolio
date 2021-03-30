@@ -3,7 +3,7 @@ sendE.onclick = function(){
     subject = document.querySelector('#mail').value;
     if(subject !== '')
     {
-        window.open('mailto:ynaj2200@gmail.com?subject='+encodeURIComponent(subject))
+        window.open('mailto:ynajy2200@gmail.com?subject='+encodeURIComponent(subject))
     }
 }
 var spot = document.getElementsByClassName('spoto').item(0);
